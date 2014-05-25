@@ -2,5 +2,5 @@ before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -qq build-essential dpkg-dev
 script:
-- dpkg-build --build
+- dpkg-buildpackage -rfakeroot
 - ls -lah
