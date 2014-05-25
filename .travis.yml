@@ -2,5 +2,5 @@ before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -qq build-essential dpkg-dev
 script:
-- dpkg-buildpackage -rfakeroot
+- dpkg --build helloworld_1.0-1
 - ls -lah
