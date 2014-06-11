@@ -1,0 +1,5 @@
+helloworld (1.0) unstable; urgency=low
+
+  * Sample package
+
+ -- Sébastien Elet <sebastien@elet.fr>  Wed, 12 Jun 2014 10:00:00 +0000
