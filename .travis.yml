@@ -5,6 +5,4 @@ before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -qq build-essential dpkg-dev equivs reprepro
 script:
-- cd helloworld_1.0-1
-- dpkg-buildpackage -us -uc
-- ls -lah
+- make all
