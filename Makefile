@@ -20,7 +20,7 @@ publish-gh-repo: build-dummy-package
 	git config --global user.name "travis-ci"
 	git config credential.helper "store --file=.git/credentials"
 	@echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-	git clone --quiet --branch=gh-pages https://github.com/Nasga/sample-pkg-debian gh-pages > /dev/null
+	git clone --quiet --branch=gh-pages https://github.com/Nasga/sample-pkg-debian.git gh-pages > /dev/null
 	cd gh-pages
 	mkdir -p apt/debian/conf
 	echo 'Origin: GithubPackages' >> apt/debian/conf/distributions
@@ -32,5 +32,5 @@ publish-gh-repo: build-dummy-package
 	reprepro --basedir=apt/debian includedeb wheezy *.deb
 	git add apt
 	git commit -m 'Update gh-pages with debian repo'
-	git remote add origin https://github.com/Nasga/sample-pkg-debian
+	git remote set-url origin https://github.com/Nasga/sample-pkg-debian.git
 	git push -fv origin gh-pages	
