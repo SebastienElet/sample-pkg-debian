@@ -32,4 +32,4 @@ publish-gh-repo: build-dummy-package
 	reprepro --basedir=apt/debian includedeb wheezy *.deb
 	git add apt
 	git commit -m 'Update gh-pages with debian repo'
-	git push -fq origin gh-pages	
+	git push -fv origin gh-pages	
