@@ -21,12 +21,12 @@ publish-gh-repo: build-dummy-package
 	git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/Nasga/sample-pkg-debian gh-pages > /dev/null
 	cd gh-pages
 	mkdir -p apt/debian/conf
-	echo 'Origin: GithubPackages' > apt/debian/conf/distributions
-	echo 'Label: GithubPackages' > apt/debian/conf/distributions
-	echo 'Codename: wheezy' > apt/debian/conf/distributions
-	echo 'Architectures: i386 amd64' > apt/debian/conf/distributions
-	echo 'Components: main' > apt/debian/conf/distributions
-	echo 'Description: Apt repository for sample debian package' > apt/debian/conf/distributions
+	echo 'Origin: GithubPackages' >> apt/debian/conf/distributions
+	echo 'Label: GithubPackages' >> apt/debian/conf/distributions
+	echo 'Codename: wheezy' >> apt/debian/conf/distributions
+	echo 'Architectures: i386 amd64' >> apt/debian/conf/distributions
+	echo 'Components: main' >> apt/debian/conf/distributions
+	echo 'Description: Apt repository for sample debian package' >> apt/debian/conf/distributions
 	reprepro --basedir=apt/debian includedeb wheezy *.deb
 	git add apt
 	git commit -m 'Update gh-pages with debian repo'
