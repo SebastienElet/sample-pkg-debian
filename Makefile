@@ -2,6 +2,7 @@ usage:
 	@echo build-dummy-package - build a simple debian package
 	@echo publish-gh-repo - create and publish the repository to github gh branch
 	@echo all - do all the job
+
 all:publish-gh-repo
 
 build-dummy-package:
@@ -12,8 +13,9 @@ build-dummy-package:
 	sed -i 's/# Version: <enter version here; defaults to 1.0>/Version: 1.0/' sample-pkg-debian
 	sed -i 's/# Maintainer: Your Name <yourname@example.com>/Maintainer: Sébastien ELET <>/' sample-pkg-debian
 	equivs-build sample-pkg-debian
+
 publish-gh-repo: build-dummy-package
-	cd $HOME
+	cd $(HOME)
 	git config --global user.email "travis@travis-ci.org"
 	git config --global user.name "travis-ci"
 	git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/Nasga/sample-pkg-debian gh-pages > /dev/null
