@@ -24,7 +24,7 @@ publish-gh-repo: build-dummy-package
 	echo 'Origin: GithubPackages' > apt/debian/conf/distributions
 	echo 'Label: GithubPackages' > apt/debian/conf/distributions
 	echo 'Codename: wheezy' > apt/debian/conf/distributions
-	echo 'Architecture: i386 amd64' > apt/debian/conf/distributions
+	echo 'Architectures: i386 amd64' > apt/debian/conf/distributions
 	echo 'Components: main' > apt/debian/conf/distributions
 	echo 'Description: Apt repository for sample debian package' > apt/debian/conf/distributions
 	reprepro --basedir=apt/debian includedeb wheezy *.deb
