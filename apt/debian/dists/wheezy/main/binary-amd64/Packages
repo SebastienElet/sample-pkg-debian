@@ -6,10 +6,10 @@ Installed-Size: 26
 Priority: optional
 Section: misc
 Filename: pool/main/s/sample-pkg-debian/sample-pkg-debian_1.0_all.deb
-Size: 2044
-SHA256: 1946bc4073c1d15c9f41592aaeaf371d4ecdbf94f41544a07b75594331c8ba63
-SHA1: e1580ac466e39427ab9a9f99dc4b5a0dc1049861
-MD5sum: 98674028222ceee3cf0729b7a9c42139
+Size: 2034
+SHA256: 3c765a4be4d344d8ddcc99b72f758a1d8e6cd024fe6d323322facbea0a6f8a92
+SHA1: 680e3268be2a08af9d9bedec52e665ef47fbc57f
+MD5sum: 1321f24f0cb1b8cc5e7a11ded7ad9de9
 Description: <short description; defaults to some wise words>
  long description and info
  .
