@@ -1,28 +1,28 @@
 Origin: GithubPackages
 Label: GithubPackages
 Codename: wheezy
-Date: Mon, 11 Aug 2014 15:36:54 UTC
+Date: Mon, 11 Aug 2014 15:50:20 UTC
 Architectures: i386 amd64
 Components: main
 Description: Apt repository for sample debian package
 MD5Sum:
- 736b4406aee5800772291f97d5a3d5cb 494 main/binary-i386/Packages
- 535f13d8911a87ef1f4a74f298e5ba32 363 main/binary-i386/Packages.gz
+ 0ffc3dcebe37b6b3aa4b405e0fb25632 493 main/binary-i386/Packages
+ b073bfaee118aeaa69a7d338ae174f0c 364 main/binary-i386/Packages.gz
  8904568486faf990e91fe7882e759056 134 main/binary-i386/Release
- 736b4406aee5800772291f97d5a3d5cb 494 main/binary-amd64/Packages
- 535f13d8911a87ef1f4a74f298e5ba32 363 main/binary-amd64/Packages.gz
+ 0ffc3dcebe37b6b3aa4b405e0fb25632 493 main/binary-amd64/Packages
+ b073bfaee118aeaa69a7d338ae174f0c 364 main/binary-amd64/Packages.gz
  9aaddcc2a82871860b4772c6b80aa22d 135 main/binary-amd64/Release
 SHA1:
- afae81dec402f40fe3181c237b75a8ac16f4daab 494 main/binary-i386/Packages
- aa66e7c033a589ba9f599b749258be07e8642e71 363 main/binary-i386/Packages.gz
+ cd305b5221f963d5a455302f7a1df80a4f5c9ddd 493 main/binary-i386/Packages
+ 287ccd86bd14c40ae2cd2e98307414d07a4b2b2c 364 main/binary-i386/Packages.gz
  f4ef8f5e346aed7b5c99e4fdc4afc0879880967e 134 main/binary-i386/Release
- afae81dec402f40fe3181c237b75a8ac16f4daab 494 main/binary-amd64/Packages
- aa66e7c033a589ba9f599b749258be07e8642e71 363 main/binary-amd64/Packages.gz
+ cd305b5221f963d5a455302f7a1df80a4f5c9ddd 493 main/binary-amd64/Packages
+ 287ccd86bd14c40ae2cd2e98307414d07a4b2b2c 364 main/binary-amd64/Packages.gz
  3a9b7815a4ee22792dff7eaad1e05e82b51f733f 135 main/binary-amd64/Release
 SHA256:
- 1f7362a239df63abdb7d42749d2fb28765271250ee6781d959d9039c0ae53a1a 494 main/binary-i386/Packages
- 07c94f8966d7600e6baf0cba86e0d96779d2d1864d7500b5357116463af3490b 363 main/binary-i386/Packages.gz
+ 43453ad6719151b2ad1df527dbcec030a90fb5f01037e55205444c27ee9f02ed 493 main/binary-i386/Packages
+ cde31fb782ccb6cd9c442c5c8a45e63df320502497659cb8a52bfa139a9ca2b7 364 main/binary-i386/Packages.gz
  265fa66541b506c766c0922bc88ec2babfb27c927834de13ca6ff9c8321418ec 134 main/binary-i386/Release
- 1f7362a239df63abdb7d42749d2fb28765271250ee6781d959d9039c0ae53a1a 494 main/binary-amd64/Packages
- 07c94f8966d7600e6baf0cba86e0d96779d2d1864d7500b5357116463af3490b 363 main/binary-amd64/Packages.gz
+ 43453ad6719151b2ad1df527dbcec030a90fb5f01037e55205444c27ee9f02ed 493 main/binary-amd64/Packages
+ cde31fb782ccb6cd9c442c5c8a45e63df320502497659cb8a52bfa139a9ca2b7 364 main/binary-amd64/Packages.gz
  21684c28b1d477435c0dbc749764d3f5c3a7f561448a1a9e3370e4a7813bef1e 135 main/binary-amd64/Release
