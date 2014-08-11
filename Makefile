@@ -20,7 +20,7 @@ publish-gh-repo: build-dummy-package
 	mkdir -p $(HOME)/.git/
 	git config credential.helper "store --file=$(HOME)/.git/credentials"
 	@echo "https://${GH_TOKEN}:@github.com" >> $(HOME)/.git/credentials
-	git clone --quiet --branch=gh-pages https://github.com/Nasga/sample-pkg-debian.git $(HOME)/gh-pages > /dev/null
+	@git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/Nasga/sample-pkg-debian.git $(HOME)/gh-pages > /dev/null
 	mkdir -p $(HOME)/gh-pages/apt/debian/conf
 	echo 'Origin: GithubPackages' >> $(HOME)/gh-pages/apt/debian/conf/distributions
 	echo 'Label: GithubPackages' >> $(HOME)/gh-pages/apt/debian/conf/distributions
