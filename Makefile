@@ -17,6 +17,7 @@ build-dummy-package:
 publish-gh-repo: build-dummy-package
 	git config --global user.email "travis@travis-ci.org"
 	git config --global user.name "travis-ci"
+	mkdir -p $(HOME)/.git/
 	git config credential.helper "store --file=$(HOME)/.git/credentials"
 	@echo "https://${GH_TOKEN}:@github.com" >> $(HOME)/.git/credentials
 	git clone --quiet --branch=gh-pages https://github.com/Nasga/sample-pkg-debian.git $(HOME)/gh-pages > /dev/null
