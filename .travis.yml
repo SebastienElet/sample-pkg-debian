@@ -1,6 +1,6 @@
 env:
   global:
-    - secure: "QWA3giaz+KmZz0AU0m7xDPK+BFs3xLt/UzcmHMp0LrsRMipE3zMpvshyRvIgy6zgI+cdHjAdAQ0gs6gx+5perzmPfaIJCwtgVUGtHB6FqtM9WGE8ByeoxXY0S7DzZs/Rvl2zc+ExFOJieaMfP72Y/fDIlnmjKk+T1RBwL2Mwumo="
+    - secure: "C+UzJxsnPrj0VWA4NJNHNdJepCqij/fMllVpm3lZ/y3CMCMScF9pOv9ve+qRm5m1NyEUihEMVbILydP5iN2/hwncg1DJNTNCtJOgr0DoeYBf6d3sTC7TQS2HzPnK+pNgMLopk94cYNhwOU3eDaoYYqQ1YraysVDhdebRM5/u0o0="
 before_install:
 - sudo apt-get update -qq
 - sudo apt-get install -qq build-essential dpkg-dev equivs reprepro
