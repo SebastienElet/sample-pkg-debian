@@ -2,14 +2,14 @@ Package: sample-pkg-debian
 Version: 1.0
 Architecture: all
 Maintainer: Sébastien ELET <>
-Installed-Size: 3
+Installed-Size: 26
 Priority: optional
 Section: misc
 Filename: pool/main/s/sample-pkg-debian/sample-pkg-debian_1.0_all.deb
-Size: 2032
-SHA256: 1fcc9b46490350f72ad500893a8ddeb25e643a36f3aef27b6c11e2005f390f3d
-SHA1: c3829d67b0ad0d4931fae9ec845d4864d5b51ce0
-MD5sum: 487c46e5de57975db7eb1c48067ddbe9
+Size: 2030
+SHA256: 15caca64b3f08e16db8388c1c6f6c71b38e545162a6f87e73b95c58b441f8fee
+SHA1: 2c92258d545779b7b5df81fa8968037453d78fca
+MD5sum: b83a7176e0980c85fe72b78687efb9b1
 Description: <short description; defaults to some wise words>
  long description and info
  .
