@@ -35,4 +35,4 @@ install:publish-gh-repo
 	echo 'deb http://nasga.github.io/sample-pkg-debian/apt/debian/ wheezy main' \
 		| sudo tee /etc/apt/sources.list.d/sample-pkg-debian.list
 	sudo apt-get update -qq
-	sudo apt-get install -yqq sample-pkg-debian
+	sudo apt-get install -qq --force-yes sample-pkg-debian
