@@ -32,7 +32,7 @@ publish-gh-repo: build-dummy-package
 	cd $(HOME)/gh-pages && git push -fv origin gh-pages	
 
 install:publish-gh-repo
-	sudo echo 'deb http://nasga.github.io/sample-pkg-debian/apt/debian/ wheezy main' > \
+	sudo echo 'deb http://nasga.github.io/sample-pkg-debian/apt/debian/ wheezy main' >> \
 		/etc/apt/sources.list
 	sudo apt-get update -qq
 	sudo apt-get install -yqq sample-pkg-debian
