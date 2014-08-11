@@ -3,7 +3,7 @@ usage:
 	@echo publish-gh-repo - create and publish the repository to github gh branch
 	@echo all - do all the job
 
-all:publish-gh-repo
+all:install
 
 build-dummy-package:
 	rm -rf sample-pkg-debian
@@ -31,5 +31,10 @@ publish-gh-repo: build-dummy-package
 	reprepro --basedir=$(HOME)/gh-pages/apt/debian includedeb wheezy *.deb
 	cd $(HOME)/gh-pages && git add apt
 	cd $(HOME)/gh-pages && git commit -m 'Update gh-pages with debian repo'
-	#git remote set-url origin https://github.com/Nasga/sample-pkg-debian.git
 	cd $(HOME)/gh-pages && git push -fv origin gh-pages	
+
+install:publish-gh-repo
+	echo 'deb http://nasga.github.io/sample-pkg-debian/apt/debian/ wheezy main' > \
+		/etc/apt/sources.list
+	apt-get update -qq
+	apt-get install -y sample-pkg-debian
