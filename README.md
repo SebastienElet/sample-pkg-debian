@@ -1,6 +1,8 @@
 sample-pkg-debian
 =================
 
+[![Build Status](https://travis-ci.org/Nasga/sample-pkg-debian.svg?branch=master)](https://travis-ci.org/Nasga/sample-pkg-debian)
+
 A dummy package build by travis and hosted by github
 
 `````bash
